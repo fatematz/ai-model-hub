@@ -1,0 +1,113 @@
+[
+    {
+        "name": "ChatGPT",
+        "company": "OpenAI",
+        "price": "$20/month",
+        "badge": "Popular",
+        "free": false,
+        "img": "/images/ChatGPT_logo.svg.png",
+        "description": "The world's most popular AI assistant by OpenAI. Versatile for writing, coding, reasoning, and creative tasks."
+    },
+    {
+        "name": "Grok",
+        "company": "xAI",
+        "price": "$30/month",
+        "badge": "Favourite",
+        "free": false,
+        "img": "/images/grok-icon.webp",
+        "description": "Built by xAI with real-time knowledge from X. Helpful, witty, and maximally truth-seeking AI."
+    },
+    {
+        "name": "DeepSeek",
+        "company": "DeepSeek AI",
+        "price": "Free",
+        "badge": "Free",
+        "free": true,
+        "img": "/images/deepseek-logo-icon.webp",
+        "description": "Powerful open-source focused AI from China. Excellent at coding, math, and cost-effective reasoning."
+    },
+    {
+        "name": "Claude",
+        "company": "Anthropic",
+        "price": "$20/month",
+        "badge": "Popular",
+        "free": false,
+        "img": "/images/claude-ai-logo-rounded-hd-free-png.png",
+        "description": "Anthropic's safe and helpful AI assistant. Excellent at analysis, writing, and nuanced reasoning."
+    },
+    {
+        "name": "Gemini",
+        "company": "Google",
+        "price": "$20/month",
+        "badge": "Trending",
+        "free": false,
+        "img": "/images/Google_Gemini_logo.svg.png",
+        "description": "Google's most capable multimodal AI. Deeply integrated with Search, Docs, and the Google ecosystem."
+    },
+    {
+        "name": "Mistral",
+        "company": "Mistral AI",
+        "price": "Free",
+        "badge": "Open Source",
+        "free": true,
+        "img": "/images/Mistral_AI_logo_(2025–).svg.png",
+        "description": "Fast and efficient open-weight models from Europe. Ideal for developers and custom deployments."
+    },
+    {
+        "name": "Meta AI",
+        "company": "Meta AI",
+        "price": "Free",
+        "badge": "Open Source",
+        "free": true,
+        "img": "/images/meta_ai-logo_brandlogos.net_xjwry.png",
+        "description": "Meta's powerful open-source Llama models. Free to use, modify, and deploy anywhere."
+    },
+    {
+        "name": "Perplexity",
+        "company": "Perplexity AI",
+        "price": "$20/month",
+        "badge": "Trending",
+        "free": false,
+        "img": "/images/perplexity-ai-icon.webp",
+        "description": "AI-powered search engine with real-time web access. Gives cited, accurate answers instantly."
+    },
+    {
+        "name": "Copilot",
+        "company": "Microsoft",
+        "price": "$30/month",
+        "badge": "Popular",
+        "free": false,
+        "img": "/images/app-page-logo_copilot.png",
+        "description": "Microsoft's AI assistant powered by GPT-4. Built into Windows, Office, and the entire Microsoft 365 suite."
+    },
+    {
+        "name": "Gemma",
+        "company": "Google DeepMind",
+        "price": "Free",
+        "badge": "Free",
+        "free": true,
+        "img": "/images/download.jpg",
+        "imgClass": "rounded-4xl",
+        "description": "Lightweight open models from Google DeepMind. Optimized for on-device and low-resource AI tasks."
+    },
+    {
+        "name": "Falcon",
+        "company": "TII UAE",
+        "price": "Free",
+        "badge": "Open Source",
+        "free": true,
+        "img": "/images/download (2).jpg",
+        "imgClass": "rounded-4xl",
+        "description": "High-performance open-source LLM from the UAE. Strong multilingual and Arabic language capabilities."
+    },
+    {
+        "name": "Qwen",
+        "company": "Alibaba",
+        "price": "Free",
+        "badge": "Open Source",
+        "free": true,
+        "img": "/images/download (3).jpg",
+        "imgClass": "rounded-4xl",
+        "description": "Alibaba's powerful multilingual model. Excels in Asian languages, coding, and mathematical reasoning."
+    }
+]
