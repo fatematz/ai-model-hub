@@ -3,67 +3,72 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import NavBar from "./components/Navber"
-import Banner from "./components/Banner"
-import Footer from "./components/Footer"
-import Aicards from "./components/Aicards"
-import SelectedCardList from "./components/SelectedCardList"
-import Aicard from "./components/Aicard"
+import NavBar from './components/Navber'
+import Banner from './components/Banner'
+import Footer from './components/Footer'
+import Aicards from './components/Aicards'
+import SelectedCardList from './components/SelectedCardList'
+import Aicard from './components/Aicard'
 
-const data=async() => {
-  const res=await fetch("Data.json")
-  console.log( res )
-  return res.json()
+const data = async () => {
+    const res = await fetch('Data.json')
+    console.log(res)
+    return res.json()
 }
 
-const sentData=data()
+const sentData = data()
 console.log(sentData)
 
-
 function App() {
-  const [count, setCount] = useState(0)
-  const [select, setSelect] = useState(true)
+    const [count, setCount] = useState(0)
+    const [select, setSelect] = useState(true)
 
-  
+    return (
+        <>
+            <NavBar></NavBar>
 
-  return (
+            <Banner></Banner>
 
+            <main>
+                <div className='max-w-7xl mx-auto flex justify-center items-center gap-[20px]'>
+                    <div className=''>
+                        <button
+                            onClick={() => setSelect(true)}
+                            className={`${select === true ? 'bg-amber-800 text-white' : 'bg-white text-black'} border border-gray-200 px-[40px] py-2 rounded-full`}
+                        >
+                            Models
+                        </button>
+                    </div>
 
-    <>
-      <NavBar></NavBar>
+                    <div className=''>
+                        <button
+                            onClick={() => setSelect(false)}
+                            className={`${select === false ? 'bg-amber-800 text-white' : 'bg-white text-black'} border border-gray-200 px-[40px] py-2 rounded-full`}
+                        >
+                            Card
+                        </button>
+                    </div>
+                </div>
 
-      <Banner></Banner>
+                {select === true ? (
+                    <Suspense
+                        fallback={
+                            <span className='loading loading-spinner loading-xl'></span>
+                        }
+                    >
+                        <Aicards sentData={sentData}></Aicards>
+                    </Suspense>
+                ) : (
+                    <SelectedCardList></SelectedCardList>
+                )}
+            </main>
 
-      <main>
-        <div className="max-w-7xl mx-auto flex justify-center items-center gap-[20px]">
-          <div className="">
-            <button onClick={() => setSelect(true) } className={`${select === true ? "bg-amber-800 text-white" : "bg-white text-black"} border border-gray-200 px-[40px] py-2 rounded-full`} >Models</button>
-          </div>
-           
+            <Footer></Footer>
 
-             <div className="">
-            <button onClick={() =>setSelect(false) } className={`${select === false ? "bg-amber-800 text-white" : "bg-white text-black"} border border-gray-200 px-[40px] py-2 rounded-full`} >Card</button>
-            </div>
-        </div>
-
-        {
-          select === true ? <Aicards></Aicards>:  <SelectedCardList></SelectedCardList>
-        }
-
-     
-        
-      </main>
-
-      <Suspense  fallback={<span className="loading loading-spinner loading-xl"></span>}>
-      <Aicards sentData={sentData}></Aicards>
-      </Suspense>
-
-      <Footer></Footer>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+            <div className='ticks'></div>
+            <section id='spacer'></section>
+        </>
+    )
 }
 
 export default App
