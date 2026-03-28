@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const Aicard = ({ data }) => {
+const Aicard=({data}) => {
+    
+    const [clicked, setClicked] = useState("click")
     return (
         <div className='border border-gray-300 rounded-4xl '>
             
@@ -25,7 +27,7 @@ const Aicard = ({ data }) => {
                     <p> {data.price} </p>
                 </div>
                 <div className="">
-                    <button className="btn w-full bg-amber-800 text-white rounded-3xl ">Subscribe Now</button>
+                    <button onClick={() => setClicked("Subscribed")} className="btn w-full bg-amber-800 text-white rounded-3xl "> {`${clicked === "click" ? " Subscribe Now" : "Subscribed" }`} </button>
                     </div>
                     </div>
             </div>
