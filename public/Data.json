@@ -2,7 +2,7 @@
     {
         "name": "ChatGPT",
         "company": "OpenAI",
-        "price": "$20/month",
+        "price": 20,
         "badge": "Popular",
         "free": false,
         "img": "/images/ChatGPT_logo.svg.png",
@@ -11,7 +11,7 @@
     {
         "name": "Grok",
         "company": "xAI",
-        "price": "$30/month",
+        "price": 30,
         "badge": "Favourite",
         "free": false,
         "img": "/images/grok-icon.webp",
@@ -20,7 +20,7 @@
     {
         "name": "DeepSeek",
         "company": "DeepSeek AI",
-        "price": "Free",
+        "price": 20,
         "badge": "Free",
         "free": true,
         "img": "/images/deepseek-logo-icon.webp",
@@ -29,7 +29,7 @@
     {
         "name": "Claude",
         "company": "Anthropic",
-        "price": "$20/month",
+        "price": 20,
         "badge": "Popular",
         "free": false,
         "img": "/images/claude-ai-logo-rounded-hd-free-png.png",
@@ -38,7 +38,7 @@
     {
         "name": "Gemini",
         "company": "Google",
-        "price": "$20/month",
+        "price": 20,
         "badge": "Trending",
         "free": false,
         "img": "/images/Google_Gemini_logo.svg.png",
@@ -47,7 +47,7 @@
     {
         "name": "Mistral",
         "company": "Mistral AI",
-        "price": "Free",
+        "price": 10,
         "badge": "Open Source",
         "free": true,
         "img": "/images/Mistral_AI_logo_(2025–).svg.png",
@@ -56,7 +56,7 @@
     {
         "name": "Meta AI",
         "company": "Meta AI",
-        "price": "Free",
+        "price": 5,
         "badge": "Open Source",
         "free": true,
         "img": "/images/meta_ai-logo_brandlogos.net_xjwry.png",
@@ -65,7 +65,7 @@
     {
         "name": "Perplexity",
         "company": "Perplexity AI",
-        "price": "$20/month",
+        "price": 20,
         "badge": "Trending",
         "free": false,
         "img": "/images/perplexity-ai-icon.webp",
@@ -74,7 +74,7 @@
     {
         "name": "Copilot",
         "company": "Microsoft",
-        "price": "$30/month",
+        "price": 30,
         "badge": "Popular",
         "free": false,
         "img": "/images/app-page-logo_copilot.png",
@@ -83,7 +83,7 @@
     {
         "name": "Gemma",
         "company": "Google DeepMind",
-        "price": "Free",
+        "price": 7,
         "badge": "Free",
         "free": true,
         "img": "/images/download.jpg",
@@ -93,7 +93,7 @@
     {
         "name": "Falcon",
         "company": "TII UAE",
-        "price": "Free",
+        "price": 9,
         "badge": "Open Source",
         "free": true,
         "img": "/images/download (2).jpg",
@@ -103,7 +103,7 @@
     {
         "name": "Qwen",
         "company": "Alibaba",
-        "price": "Free",
+        "price": 5,
         "badge": "Open Source",
         "free": true,
         "img": "/images/download (3).jpg",

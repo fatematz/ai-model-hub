@@ -20,8 +20,10 @@ const sentData = data()
 console.log(sentData)
 
 function App() {
-    const [count, setCount] = useState(0)
-    const [select, setSelect] = useState(true)
+    // const [count, setCount] = useState(0)
+    const [select, setSelect]=useState(true)
+    const [addToCard, setAddToCard]=useState([])
+    console.log( addToCard )
 
     return (
         <>
@@ -45,7 +47,7 @@ function App() {
                             onClick={() => setSelect(false)}
                             className={`${select === false ? 'bg-amber-800 text-white' : 'bg-white text-black'} border border-gray-200 px-[40px] py-2 rounded-full`}
                         >
-                            Card
+                           {` Cart (${addToCard.length})`}
                         </button>
                     </div>
                 </div>
@@ -56,10 +58,10 @@ function App() {
                             <span className='loading loading-spinner loading-xl'></span>
                         }
                     >
-                        <Aicards sentData={sentData}></Aicards>
+                        <Aicards sentData={sentData} addToCard={addToCard} setAddToCard={setAddToCard} ></Aicards>
                     </Suspense>
                 ) : (
-                    <SelectedCardList></SelectedCardList>
+                    <SelectedCardList addToCard={addToCard} setAddToCard={setAddToCard}></SelectedCardList>
                 )}
             </main>
 

@@ -6,14 +6,14 @@ const Banner = () => {
       <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
         {/* Left Content */}
         <div className="space-y-4">
-          <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-medium px-5 py-2 rounded-full">
+          <div className="inline-flex items-center gap-2 bg-red-500/10 border border-amber-500/30 text-amber-500 text-sm font-medium px-5 py-2 rounded-full">
             ✨ Frontier AI Models
           </div>
 
-          <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter text-red-600">
+          <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter text-amber-800">
             One Subscription.
             <br />
-            <span className="bg-linear-to-r from-red-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-amber-700 via-orange-400 to-amber-400 bg-clip-text text-transparent">
               All the AIs You Need
             </span>
           </h1>
@@ -24,7 +24,7 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="bg-red-600 hover:bg-red-500 transition-all px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-red-500/30 flex items-center gap-3 group text-white">
+            <button className="bg-amber-800 hover:bg-amber-700 transition-all px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-amber-200/30 flex items-center gap-3 group text-white">
               Get Unlimited Access
               <span className="group-hover:translate-x-1 transition">→</span>
             </button>

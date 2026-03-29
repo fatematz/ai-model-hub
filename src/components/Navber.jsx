@@ -25,7 +25,7 @@ const NavBar=() => {
         </ul>
       </div>
       <div className="navbar-end gap-5">
-        <a className="btn bg-red-500 rounded-full text-white">Get in Touch</a>
+        <a className="btn bg-amber-800 rounded-full text-white">Get in Touch</a>
       </div>
     </div>
   );

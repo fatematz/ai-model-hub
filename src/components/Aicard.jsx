@@ -1,8 +1,18 @@
 import React, {useState} from 'react'
+import {toast} from "react-toastify"
 
-const Aicard=({data}) => {
+const Aicard=({data, addToCard, setAddToCard}) => {
+
+      
     
-    const [clicked, setClicked] = useState("click")
+    const [clicked, setClicked]=useState("click")
+    
+    const handleSubsCription=() => {
+        setClicked("Subscribed")
+        setAddToCard([...addToCard, data])
+        toast("Item added to card")
+    }
+
     return (
         <div className='border border-gray-300 rounded-4xl '>
             
@@ -24,10 +34,10 @@ const Aicard=({data}) => {
                     <p className=""> {data.description} </p>
                 </div>
                 <div className="font-bold text-2xl">
-                    <p> {data.price} </p>
+                    <p> ${data.price}/amount</p>
                 </div>
                 <div className="">
-                    <button onClick={() => setClicked("Subscribed")} className="btn w-full bg-amber-800 text-white rounded-3xl "> {`${clicked === "click" ? " Subscribe Now" : "Subscribed" }`} </button>
+                    <button onClick={handleSubsCription } className="btn w-full bg-amber-800 text-white rounded-3xl "> {`${clicked === "click" ? " Subscribe Now" : "Subscribed" }`} </button>
                     </div>
                     </div>
             </div>
