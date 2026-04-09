@@ -1,16 +1,32 @@
-# React + Vite
+# AI Model Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Project Overview
+AI Model Hub is a frontend React + Vite web application template designed to showcase, organize, and interact with AI models in a clean, responsive UI. It provides a modern base to explore and integrate AI capabilities.
 
-Currently, two official plugins are available:
+## 💻 Technology Stack
+- **Frontend:** React  
+- **Build Tool:** Vite  
+- **Languages:** JavaScript, HTML, CSS  
+- **Linting:** ESLint  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Main Features
+- Responsive UI with dynamic components  
+- Structured interface for displaying AI model cards  
+- Modern React component setup  
+- Fast development experience with Vite  
 
-## React Compiler
+## 🛠 Dependencies
+react, react-dom, @vitejs/plugin-react / @vitejs/plugin-react-swc, eslint  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Getting Started
+Clone the repository: git clone https://github.com/fatematz/ai-model-hub.git  
+Navigate to the project folder: cd ai-model-hub  
+Install dependencies: npm install  
+Start the development server: npm run dev  
+Open the app in your browser: http://localhost:5173  
 
-## Expanding the ESLint configuration
+## 🔗 Relevant Links
+Repository Link: https://github.com/fatematz/ai-model-hub  
+Live Demo: https://lnkd.in/g7amy_m2
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![1774777186317](https://github.com/user-attachments/assets/51efc6eb-adc6-48a0-8c7f-70534853eeef)
