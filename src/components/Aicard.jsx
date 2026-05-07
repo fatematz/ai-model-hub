@@ -9,6 +9,14 @@ const Aicard=({data, addToCard, setAddToCard}) => {
     
     const handleSubsCription=() => {
         setClicked("Subscribed")
+
+        const isFound=addToCard.find(item => item.name===data.name)
+        
+        if(isFound) {
+            toast.error("Item already in card")
+            return
+        }
+
         setAddToCard([...addToCard, data])
         toast("Item added to card")
     }
